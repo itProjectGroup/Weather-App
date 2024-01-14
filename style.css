@@ -1,0 +1,153 @@
+body {
+  background: #252526;
+  font-family: 'Arial', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 120px;
+  min-height: 120px;
+  max-height: auto;
+  float: left;
+  /* margin: 3px;
+  padding: 3px; */
+}
+
+#humidity_img,
+#precipitation_img {
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin: 5px 0px 10px 0px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.icons a {
+  transition: transform 250ms;
+  text-decoration: none;
+  /* Remove underline */
+  color: white !important;
+}
+
+.icons a:hover {
+  transform: translateY(-5px);
+}
+
+/* Styles for Input */
+
+input[type=text]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.text-container {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.output-container {
+  display: flex;
+  background: linear-gradient(145deg, #282829, #212122);
+  box-shadow: 6px 6px 10px #1c1c1d, -6px -6px 10px #2e2e2f;
+  cursor: pointer;
+  padding: 5px;
+  width: 45vw;
+  height: 25vh;
+  align-items: center;
+  overflow: auto;
+}
+
+.result-container {
+  align-items: center;
+  background: linear-gradient(145deg, #282829, #212122);
+  box-shadow: 6px 6px 10px #1c1c1d, -6px -6px 10px #2e2e2f;
+  cursor: pointer;
+  border-radius: 13px;
+  padding: 5px;
+  width: 45vw;
+  height: 35vh;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  overflow: auto;
+  /* transition: transform 250ms; */
+}
+
+
+.input-container {
+  /* max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; */
+}
+
+.input-field {
+  background: transparent;
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #008CBA;
+  outline: none;
+  color: white;
+}
+
+.button {
+  width: 50%;
+  background-color: #008CBA;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #007B9A;
+}
+
+#temperature {
+  margin: 0;
+  font-size: 45px;
+  line-height: 1.6;
+  color: white;
+  /* Change text color to white */
+}
+
+#description {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.6;
+  color: white;
+}
+
+.info_text {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.6;
+  color: white;
+}

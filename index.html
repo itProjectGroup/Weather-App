@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/3943ac4422.js" crossorigin="anonymous"></script>
+  <script src="/style.css" type="module"></script>
+  <script src="/main.js" type="module"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <ul class="flex-container">
+    <div id="result" class="">
+
+      <div id="temp_logo" class="logo"></div>
+      <div class="text-container">
+        <p id="temperature"></p>
+        <p id="description"></p>
+      </div>
+
+      <img id="humidity_img" style="display: none;" title="Humidity"></img>
+      <div class="text-container">
+        <p id="humidity" class="info_text"></p>
+      </div>
+
+      <img id="precipitation_img" style="display: none;" title="Precipitation"></img>
+      <div class="text-container">
+        <p id="precipitation" class="info_text"></p>
+      </div>
+    </div>
+
+    <div class="result-container input-container">
+      <input class="input-field" type="text" id="location_Lat" placeholder="Latitude" name="input" value="19.125">
+      <input class="input-field" type="text" id="location_Log" placeholder="Logitude" name="input" value="72.875">
+      <button id="searchButton" class="button">Search</button>
+
+      <div class="icons">
+        <a href="https://github.com/itProjectGroup" class="fa fa-github"></a>
+        <a href="https://in.linkedin.com/in/navjeet-pattali-53923b1ba" class="fab fa-linkedin-in"></a>
+      </div>
+    </div>
+  </ul>
+</body>
+
+</html>
